@@ -1,0 +1,7 @@
+{
+    "project_name": "project-x-sentiment",
+    "model_name": "sentiment",
+    "model_view_name": "SentimentAnalysisView",
+    "github_repo_name": "project-x-sentiment",
+    "github_username": "mayankkushal"
+}
