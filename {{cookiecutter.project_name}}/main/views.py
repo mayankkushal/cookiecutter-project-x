@@ -28,6 +28,12 @@ class {{cookiecutter.model_view_name}}(APIView):
     def get(self, request, format=None):
         return Response({"details": "Welcome to {{cookiecutter.model_name}} analysis! Project-X"})
 
+    def initial(self, request, *args, **kwargs):
+        if not settings.DEBUG:
+            if not settings.PRIVATE_KEY==request.data['PRIVATE_KEY']:
+                raise PermissionDenied("Not Allowed")
+        super({{cookiecutter.model_view_name}}, self).initial(request, *args, **kwargs)
+
     def _predict(self):
         """
             Prediction logic goes here.
