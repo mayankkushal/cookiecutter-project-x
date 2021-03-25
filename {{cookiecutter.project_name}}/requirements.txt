@@ -31,7 +31,7 @@ psycopg2==2.7.6.1
 python-dateutil==2.7.5
 python-dotenv==0.10.1
 pytz==2018.9
-PyYAML==3.13
+PyYAML==5.4
 requests==2.21.0
 ruamel.yaml==0.15.85
 scikit-learn==0.20.2
